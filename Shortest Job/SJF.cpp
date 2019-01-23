@@ -28,6 +28,7 @@ class SJF
     int *at,*bt,*cbt,*ct,*wt,*tat,*pid;
     int n;
     int elapsed_time=0;
+    int idle_counter=0;
     int burst_sum=0;
     //average waiting time and average turnaround time
     float atat=0.0,awt=0.0;
@@ -101,12 +102,7 @@ void SJF::calculate()
     {
       burst_sum+=bt[i];
     }
-    //label ' ifnone ' to be used via goto statement if idle state occurs in between processes.
-    /*
-    refer this if you disagree with goto.
-    https://stackoverflow.com/questions/3517726/what-is-wrong-with-using-goto/3517765#3517765
-    */
-    ifnone:
+    
     while(burst_sum!=0)
     {
       counter=0;
@@ -116,18 +112,21 @@ void SJF::calculate()
       {
         if(at[i]<=elapsed_time&&bt[i]!=0)
         {
+	  idle_counter=0;
           value_array[counter]=bt[i];
           index_array[counter]=i;
           //Incrementing counter.
           counter++;
         }
       }
-      //If counter is still 0, then processor is in idle state, and we use the goto statement to move to while loop after incrementing time.
+      //If counter is still 0, then processor is in idle state, and we use the idle counter to move to while loop after incrementing time.
       if(counter==0)
       {
           elapsed_time++;
-          goto ifnone;
+          idle_counter=1;
       }
+      if(idle_counter==0)
+      {
       //Sorting all processes in the arrays based on their burst times.
       for(i=0;i<counter;i++)
       {
@@ -159,6 +158,7 @@ void SJF::calculate()
           burst_sum+=bt[i];
         }
       }
+    }
     //Steps to calculate the turnaround time & waiting time.
     for(int i=0;i<n;i++)
     {
