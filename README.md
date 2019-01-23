@@ -1,9 +1,13 @@
 # Scheduling_Algo_Cpp
 
-A collection of Scheduling Algorithms that I implemented while learning Operating Systems in clear and legible C++. Thanks for checking my algorithms out.
+A collection of Scheduling Algorithms that I implemented while learning Operating Systems in clear and legible C++.
+
+Thanks for checking my algorithms out.
+
+Do you think this will be useful for you? Please, star it.
 
 
 Do you find some thing you like? Please, clone it.
 
 
-Do you feel something's missing? Don't hestiate to send a pull request.
+Do you feel something's missing? Please, don't hestiate to send a pull request.
