@@ -27,6 +27,7 @@ class SRTF
     //Declaring as pointer variables for further convenience.
     int *at,*bt,*cbt,*ct,*wt,*tat,*pid;
     int n;
+    int idle_counter=0;
     int elapsed_time=0;
     int burst_sum=0;
     //average waiting time and average turnaround time
@@ -99,12 +100,6 @@ void SRTF::calculate()
     {
       burst_sum+=bt[i];
     }
-    //label ' ifnone ' to be used via goto statement if idle state occurs in between processes.
-    /*
-    refer this if you disagree with goto.
-    https://stackoverflow.com/questions/3517726/what-is-wrong-with-using-goto/3517765#3517765
-    */
-    ifnone:
     while(burst_sum!=0)
     {
       counter=0;
@@ -114,19 +109,22 @@ void SRTF::calculate()
       {
         if(at[i]<=elapsed_time&&bt[i]!=0)
         {
+	      idle_counter=0;
           value_array[counter]=bt[i];
           index_array[counter]=i;
           //Incrementing counter.
           counter++;
         }
       }
-      //If counter is still 0, then processor is in idle state, and we use the goto statement to move to while loop after incrementing time.
+      //If counter is still 0, then processor is in idle state, and we set the idle_counter to 1
       if(counter==0)
       {
+	      idle_counter=1;
           elapsed_time++;
-          goto ifnone;
       }
       //Sorting all processes in the arrays based on their burst times.
+      if(idle_counter==0)
+      {
       for(i=0;i<counter;i++)
       {
         for(j=0;j<counter-1;j++)
@@ -164,6 +162,7 @@ void SRTF::calculate()
           burst_sum+=bt[i];
         }
       }
+    }
     //Steps to calculate the turnaround time & waiting time.
     for(int i=0;i<n;i++)
     {
@@ -250,3 +249,4 @@ P[4]    3       5       10              7               2
                                                                                                                                                                                             
 Average Waiting Time is 6.5ms.                                                                                                                                                              
 Average Turn Around is 13ms. 
+*/
