@@ -14,9 +14,13 @@ class SJF
 {
     //Member Functions
     public:
+    //getdata() takes in all the inputs from the user in the form of n, arrival times, and burst times
     void getdata();
+    //calculate() performs all calculations of completion times, turnaround times and waiting times.
     void calculate();
+    //putdata() performs all print operations.
     void putdata();
+    //atat_awt() calculates the average waiting time and average turnaround time.
     void atat_awt();
     //Member Variables
     public:
