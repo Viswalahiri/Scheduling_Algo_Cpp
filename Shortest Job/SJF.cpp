@@ -23,7 +23,7 @@ class SJF
     //atat_awt() calculates the average waiting time and average turnaround time.
     void atat_awt();
     //Member Variables
-    public:
+    private:
     //Declaring as pointer variables for further convenience.
     int *at,*bt,*cbt,*ct,*wt,*tat,*pid;
     int n;
