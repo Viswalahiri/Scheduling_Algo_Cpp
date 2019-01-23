@@ -57,9 +57,6 @@ void SJF::calculate()
     //Here process ID implies the order in which the processes were entered.
     for(int i=0;i<n;i++)
       pid[i]=i+1;
-
-
-
     //Applying bubble sorting to both arrival times and burst times based upon arrival times.
     for(int j=0;j<n;j++)
     for(int i=0;i<n-1;i++)
@@ -81,8 +78,6 @@ void SJF::calculate()
             pid[i+1]=temp;
         }
     }
-
-
     //Steps to calculate the completion time
 
     //Completion time of process with least arrival time is sum of arrival time and burst time.
@@ -110,7 +105,6 @@ void SJF::calculate()
     ifnone:
     while(burst_sum!=0)
     {
-      
       counter=0;
       //Placing all burst times and indices into arrays, whose arrival times are less than the elapsed time(already arrived)
       //and if the burst time of that process is not zero, i.e, the process hasn't completed yet.
