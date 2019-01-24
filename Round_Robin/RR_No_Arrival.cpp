@@ -42,7 +42,7 @@ void Round::getdata()
         {
         	cin>>bt[i];
         	burst_sum+=bt[i];
-		//Getting the copy of the 
+		//Getting the copy of the burst times
 		cbt[i]=bt[i];
         }
 	//Initalizing arrival times and completion times as 0.
@@ -69,7 +69,7 @@ void Round::calculator()
                         elapsed_time+=bt[i];
 			//burst time becomes 0
                         bt[i]=0;
-			//Doubtful
+                        
                         if(ct[i]==0)
                         {
                         ct[i]=elapsed_time;
@@ -150,7 +150,6 @@ Process Arrival Burst   Completion      Turn Around     Waiting
 P[1]    0       30      44              44              14
 P[2]    0       6       21              21              15
 P[3]    0       8       24              24              16
-
 Average Waiting Time is 15ms.
 Average Turn Around is 29.6667ms.
-*/                            
+*/
