@@ -1,7 +1,18 @@
+/*
+ * 
+ * Title:       Round Robin's Scheduling Algorithm.
+ * Description: Taking processes from the user, execute them according to Round Robin's Scheduling procedure 
+                and calculate the average waiting time and the average turnaround time if all the processes arrival at 0.
+ * Author:      Viswalahiri Swamy Hejeebu
+ * GitHub:      https://github.com/Viswalahiri
+ * LinkedIn:    https://in.linkedin.com/in/viswalahiri-hejeebu-45baa2155
+ *  
+ */
 #include<iostream>
 using namespace std;
 class Round
 {
+	//Member Variables
         private:
                 int i,j,k;
                 float atat=0.0,awt=0.0;
@@ -15,11 +26,17 @@ class Round
                 int *ct;
                 int *tat;
                 int *wt;
+	//Member Functions
 	public:
+	//getdata() takes in all the inputs from the user in the form of n, arrival times, and burst times
 		void getdata();
+	//calculate() performs all calculations of completion times.
         	void calculator();
+	 //tat_wt() calculates the waiting times and turnaround times.
         	void tat_wt();
+	 //atat_awt() calculates the average waiting time and average turnaround time.
         	void atat_awt();
+	//putdata() performs all print operations.
        		void putdata();
 };
 void Round::getdata()
