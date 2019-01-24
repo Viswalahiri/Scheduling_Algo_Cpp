@@ -1,7 +1,7 @@
 /*
  *
  * Title:       Shortest Remaining Task First Algorithm.
- * Description: Taking processes from the user, execute them in the Shortest Remaining Task First procedure.
+ * Description: Taking processes from the user, execute them in the Shortest Remaining Task First procedure
                 and calculate the average waiting time and the average turnaround time.
  * Author:      Viswalahiri Swamy Hejeebu
  * GitHub:      https://github.com/Viswalahiri
