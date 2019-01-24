@@ -10,7 +10,7 @@
 
 #include <iostream>
 using namespace std;
-class SJF
+class PRIORITY
 {
     //Member Functions
     public:
@@ -33,7 +33,7 @@ class SJF
     //average waiting time and average turnaround time
     float atat=0.0,awt=0.0;
 };
-void SJF::getdata()
+void PRIORITY::getdata()
 {
     //Enter the number of processes.
     cin>>n;
@@ -60,7 +60,7 @@ void SJF::getdata()
     for(int i=0;i<n;i++)
         cin>>pr[i];
 }
-void SJF::calculate()
+void PRIORITY::calculate()
 {
     //Assigning process IDs.
     //Here process ID implies the order in which the processes were entered.
@@ -222,7 +222,7 @@ void SJF::calculate()
         }
     }
 }
-void SJF::putdata()
+void PRIORITY::putdata()
 {
     cout<<"Process\t"<<"Arrival\t"<<"Priority\t"<<"Burst\t"<<"Completion\t"<<"Turn Around\t"<<"Waiting\t"<<endl;
     for(int i=0;i<n;i++)
@@ -231,7 +231,7 @@ void SJF::putdata()
     cout<<"Average Waiting Time is "<<awt<<"ms."<<endl;
     cout<<"Average Turn Around is "<<atat<<"ms."<<endl;
 }
-void SJF::atat_awt()
+void PRIORITY::atat_awt()
 {
 	int sumawt=0,sumatat=0;
 	for(int i=0;i<n;i++)
@@ -245,7 +245,7 @@ void SJF::atat_awt()
 //Driver Function
 int main()
 {
-    SJF obj;
+    PRIORITY obj;
     obj.getdata();
     obj.calculate();
     obj.atat_awt();
@@ -269,7 +269,6 @@ P[4]    3       10              5       21              18              13
 P[5]    4       8               1       10              6               5
 P[6]    5       12              4       25              20              16
 P[7]    6       9               6       16              10              4
-
 Average Waiting Time is 6.42857ms.
 Average Turn Around is 10ms. 
 */
