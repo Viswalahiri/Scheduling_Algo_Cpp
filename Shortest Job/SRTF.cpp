@@ -45,7 +45,7 @@ void SRTF::getdata()
     wt  = new int[n];
     tat = new int[n];
     pid = new int[n];
-    //Enter the arrival times of all the pocesses.
+    //Enter the arrival times of all the processes.
     for(int i=0;i<n;i++)
         cin>>at[i];
     //Enter the burst times of all processes.
