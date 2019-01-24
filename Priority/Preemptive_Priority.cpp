@@ -4,6 +4,7 @@
  * Description: Taking processes and their priorities from the user, execute them in the Priority Scheduling procedure
                 and calculate the average waiting time and the average turnaround time in a preemptive fashion.
  * Author:      Viswalahiri Swamy Hejeebu
+ * LinkedIn:    https://in.linkedin.com/in/viswalahiri-hejeebu-45baa2155
  * GitHub:      https://github.com/Viswalahiri
  *
  */
