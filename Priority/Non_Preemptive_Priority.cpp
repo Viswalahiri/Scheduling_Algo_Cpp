@@ -216,7 +216,7 @@ void SJF::calculate()
             tat[i]=tat[i+1];
             tat[i+1]=temp1;
                         
-			temp1=pr[i];
+	    temp1=pr[i];
             pr[i]=pr[i+1];
             pr[i+1]=temp1;
         }
