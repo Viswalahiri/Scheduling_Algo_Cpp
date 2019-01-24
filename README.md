@@ -4,7 +4,7 @@ A collection of Scheduling Algorithms that I implemented while learning Operatin
 
 Thanks for checking my algorithms out.
 
-Do you think this will be useful for you? Please, star it(the star icon in the right hand top corner). That way, I know that this is helpful for you.
+Do you think this will be useful for you? Please, star it(the star icon in the right hand top corner). That way, I will know that this has been helpful for you.
 
 
 
