@@ -5,6 +5,7 @@
                 and calculate the average waiting time and the average turnaround time.
  * Author:      Viswalahiri Swamy Hejeebu
  * GitHub:      https://github.com/Viswalahiri
+ * LinkedIn:    https://in.linkedin.com/in/viswalahiri-hejeebu-45baa2155
  *  
  */
  
