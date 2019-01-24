@@ -4,7 +4,7 @@ A collection of Scheduling Algorithms that I implemented while learning Operatin
 
 Thanks for checking my algorithms out.
 
-Do you think this will be useful for you? Please, star it.
+Do you think this will be useful for you? Please, star it. That way, I know that this is helpful.
 
 
 Do you find some thing you like? Please, clone it.
