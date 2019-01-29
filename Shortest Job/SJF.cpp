@@ -28,6 +28,7 @@ class SJF
     //Declaring as pointer variables for further convenience.
     int *at,*bt,*cbt,*ct,*wt,*tat,*pid;
     int n;
+    //elapsed_time describes the time that has been completed so far, and it will increase as the program goes on. 
     int elapsed_time=0;
     int idle_counter=0;
     int burst_sum=0;
