@@ -92,7 +92,7 @@ void SJF::calculate()
     bt[0]=0;
     //Initially, the elapsed time is equal to the Completion time of the first process(or the process with the least arrival time.)
     elapsed_time=ct[0];
-    //Creating two arrays 1.value_array and 2.index_array to save values and indices respectively.
+    //Creating two arrays 1.value_array and 2.index_array to save values of burst times and indices respectively.
     int value_array[n];
     int index_array[n];
     //Declerations and initializations.
