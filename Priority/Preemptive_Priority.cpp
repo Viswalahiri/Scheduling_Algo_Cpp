@@ -95,8 +95,11 @@ void PRIORITY::calculate()
     }
     //Steps to calculate the completion time
 
-    //Initially, the elapsed time is equal to the Completion time of the first process(or the process with the least arrival time.)
-    //Creating three arrays 1.value_array and 2.index_array to save priorities, indices, and burst times respectively.
+    //Initially, the elapsed time is not equal to the Completion time of the first process(or the process with the least arrival time.)
+    //That was in the example of non-preemption, but since processes keep switching here, no guarentees can be given.
+	
+	
+    //Creating three arrays 1.value_array and 2.index_array and 3. burst_array to save priorities, indices, and burst times respectively.
     int value_array[n];
     int index_array[n];
     int burst_array[n];
