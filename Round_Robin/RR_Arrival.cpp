@@ -1,3 +1,14 @@
+/*
+ * 
+ * Title:       Round Robin algorithm with arrival time.
+ * Description: Taking processes from the user, execute them in round robin fashion
+                and calculate the average waiting time and the average turnaround time.
+ * Author:      Puja Kumari
+ * GitHub:      https://github.com/pujakumari19
+ * LinkedIn:    https://www.linkedin.com/in/puja-kumari-15732a192/
+ *  
+ */
+
 #include<iostream>
 using namespace std;
 class Round
