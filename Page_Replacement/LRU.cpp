@@ -1,3 +1,14 @@
+/*
+ * 
+ * Title:       Least recently used.
+ * Description: In the Least Recently Used (LRU) page replacement policy, the page that is used least recently
+                 will be replaced.
+ * Author:      Puja Kumari
+ * GitHub:      https://github.com/pujakumari19
+ * LinkedIn:    https://www.linkedin.com/in/puja-kumari-15732a192/
+ *  
+ */
+
 #include<iostream>
 using namespace std;
 int main()
