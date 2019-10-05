@@ -1,3 +1,13 @@
+/*
+ * 
+ * Title:       Paging
+ * Description: Paging is a method of writing data to, and reading it from, secondary storage for use in primary storage, 
+                also known as main memory.
+ * Author:      Puja Kumari
+ * GitHub:      https://github.com/pujakumari19
+ * LinkedIn:    https://www.linkedin.com/in/puja-kumari-15732a192/
+ *  
+ */
 #include<iostream>
 using namespace std;
 int main()
